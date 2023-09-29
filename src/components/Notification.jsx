@@ -11,7 +11,7 @@ const Notification =()=>{
   
  React.useEffect(() => {
     // Fetch BMI data from the backend
-    axios.get('https://healthcare-api-lxx6.onrender.com/api/get-bmi')
+    axios.get('https://healthcare-api-p7dm.onrender.com/api/get-bmi')
       .then((response) => {
       
         setBmiData(response.data);
