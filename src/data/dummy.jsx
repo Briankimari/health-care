@@ -38,13 +38,6 @@ export const links=[
                 icon:<GoReport/>
            
     },
-     {
-        title:'LogOut',
-       
-                name:'',
-                icon:<FiLogOut/>
-           
-    },
    
 
 ]

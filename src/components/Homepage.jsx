@@ -104,7 +104,7 @@ const Homepage = () => {
      colorie,
     };
 
-    axios.post('http://localhost:5000/api/save-bmi', bmiData)
+    axios.post('https://healthcare-api-lxx6.onrender.com/api/save-bmi', bmiData)
 
     .then((response)=> {
       console.log(response.data.message);
@@ -126,7 +126,7 @@ const Homepage = () => {
     
   };
 
-  axios.post('http://localhost:5000/api/save-colorie', calorieData)
+  axios.post('https://healthcare-api-lxx6.onrender.com/api/save-colorie', calorieData)
 
   .then((response)=> {
     console.log(response.data.message);

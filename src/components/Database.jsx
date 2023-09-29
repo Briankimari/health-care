@@ -252,7 +252,7 @@ export default function Database() {
 
  React.useEffect(() => {
     // Fetch BMI data from the backend
-    axios.get('http://localhost:5000/api/get-bmi')
+    axios.get('https://healthcare-api-lxx6.onrender.com/api/get-bmi')
       .then((response) => {
       
         setBmiData(response.data);
@@ -262,7 +262,7 @@ export default function Database() {
       });
 
     // Fetch calorie data from the backend
-    axios.get('http://localhost:5000/api/get-calorie')
+    axios.get('https://healthcare-api-lxx6.onrender.com/api/get-calorie')
       .then((response) => {
         
         setCalorieData(response.data);
@@ -275,7 +275,7 @@ export default function Database() {
 
     const handleDelete = (event, id) => {
     // Send a request to delete the item from the backend
-    axios.delete(`http://localhost:5000/api/delete-bmi/${id}`)
+    axios.delete(`https://healthcare-api-lxx6.onrender.com/api/delete-bmi/${id}`)
       .then((response) => {
         // Assuming the delete request was successful
         // Remove the deleted item from the state
