@@ -1,0 +1,267 @@
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/* loader */
+/* Loading */
+.wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+}
+
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+
+
+
+/* new */
+
+
+.content-0 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-0 {
+    font-size: 32px;
+}
+
+.img {
+    display: flex;
+    margin: 0 auto;
+    height: 40vh;
+
+    border-radius: 5%;
+}
+
+.img-1 {
+    display: flex;
+    margin: 0 auto;
+    height: 30vh;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+}
+
+@media (max-width:765px) {
+    .img-1 {
+        height: auto;
+    }
+}
+
+.box-popular {
+    border-top-left-radius: 10%;
+}
+
+.container-0 {
+    margin: 0 auto;
+    width: 100%;
+    height: 50vh;
+    border-color: white;
+}
+
+
+
+
+.slick-prev {
+    left: -52px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    content: "" !important;
+}
+
+.next-slick-arrow,
+.prev-slick-arrow {
+    color: 'red';
+    font-size: 45px;
+}
+
+/* new */
+
+/* order */
+.order-bg {
+
+    background: url('./data/bg-5.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    margin-top: 5.2rem;
+
+}
+
+.Active {
+    color: orange;
+
+}
+
+/* orders */
+
+.box-slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box-0 {
+    flex: 0 0 100%;
+
+    /* Additional styling for your boxes */
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'cursive';
+
+}
+
+.view-1 {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    .full-1 {
+        display: flex;
+        align-items: left;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.2rem;
+
+    }
+
+    .view {
+        display: none;
+    }
+
+    .view-1 {
+        display: block;
+    }
+
+
+}
+
+.dropdown-content {
+    position: absolute;
+
+    z-index: 1;
+    display: none;
+
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+
+
+}
+
+.dropdown-content a:hover {
+    color: orange;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.image-slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.slider-item.active {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:800px) {
+    .sidebar {
+        z-index: 10000000;
+    }
+}
+
+.e-dlg-center-center,
+.e-quick-popup-wrapper.e-device {
+    z-index: 1000000 !important;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+
+    background: rgb(241, 224, 224);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(213, 100, 19, 0.979);
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* color-picker style  */
+
+#preview {
+    background: transparent url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png') no-repeat;
+    display: inline-block;
+    height: 80px;
+    margin: 10px 0;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: #008000;
+}
+
+.e-input-group:not(.e-float-icon-left),
+.e-input-group.e-success:not(.e-float-icon-left),
+.e-input-group.e-warning:not(.e-float-icon-left),
+.e-input-group.e-error:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+    border: none;
+}

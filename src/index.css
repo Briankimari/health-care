@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width:768px) {
+    .navs-a a {
+        display: none
+    }
+}
+
+@media (max-width:468px) {
+    .logo-1 a {
+        font-size: 1.2rem
+    }
+
+    .logo-1 a span {
+        font-size: 1.2rem
+    }
+}
+
+@media (max-width:568px) {
+    .we-1 p {
+        font-size: 1rem;
+
+    }
+
+    
+    .we-2 p {
+        font-size: 1rem;
+
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
